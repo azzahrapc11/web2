@@ -20,6 +20,14 @@ Route::get('/index', function () {
 Route::get('/halamandua', function () {
     return view('halamandua');
 });
+
 Route::get('/halamantiga', function () {
     return view('halamantiga');
 });
+
+Route::get('/rara/tambah','Rara@tambah');
+Route::resource('rara','Rara');
+
+Route::resource('mahasiswa','Mahasiswa');	
+Route::resource('user','User');
+
